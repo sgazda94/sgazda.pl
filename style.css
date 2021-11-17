@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Red+Hat+Mono:wght@400;500;600&display=swap");
+
+body {
+	background: transparent;
+	background-image: url(images/desk.jpg);
+	font-family: "Red Hat Mono", monospace;
+	letter-spacing: 1px;
+	overflow-wrap: break-word;
+}
+
+.main {
+	width: 1200px;
+	display: grid;
+	grid-template-columns: 1fr;
+	margin: 0 auto;
+
+	align-items: center;
+	justify-items: center;
+}
+
+.container {
+	margin: 0 auto;
+	background: rgba(18, 18, 18, 0.95);
+	color: white;
+	padding: 50px;
+	word-wrap: break-word;
+	max-width: 100%;
+}
+
+.row2 {
+	margin-bottom: 20px;
+}
+
+.tooltip {
+	text-decoration: underline dashed blue 2px;
+}
+
+.prof {
+	text-align: center;
+}
+
+.profilowe {
+	width: 200px;
+	border-radius: 50%;
+	padding: 0;
+}
+
+@media screen and (min-width: 600px) {
+	.main {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 100vh;
+		align-items: center;
+		justify-items: center; /* adjusted */
+	}
+
+	.container {
+		margin: 0 auto;
+		background: rgba(18, 18, 18, 0.92);
+		color: white;
+		border: 1px solid grey;
+		border-radius: 20px;
+		padding: 30px 50px;
+		-webkit-box-shadow: 2px 3px 15px 5px rgba(30, 30, 30, 0.7);
+		-moz-box-shadow: 2px 3px 15px 5px rgba(30, 30, 30, 0.7);
+		box-shadow: 2px 3px 15px 5px rgba(30, 30, 30, 0.7);
+	}
+}
