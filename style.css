@@ -4,6 +4,7 @@
 body {
 	background: transparent;
 	background-image: url(images/desk.jpg);
+	background-size: cover;
 	font-family: "Red Hat Mono", monospace;
 	letter-spacing: 1px;
 	overflow-wrap: break-word;
@@ -11,6 +12,7 @@ body {
 
 .main {
 	width: 1200px;
+	max-width: 100%;
 	display: grid;
 	grid-template-columns: 1fr;
 	margin: 0 auto;
