@@ -1,9 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Red+Hat+Mono:wght@400;500;600&display=swap");
 
 body {
 	background: transparent;
-	background-image: url(images/desk.jpg);
+	background-image: url(images/desk.webp);
 	background-size: cover;
 	font-family: "Red Hat Mono", monospace;
 	letter-spacing: 1px;
@@ -16,7 +15,6 @@ body {
 	display: grid;
 	grid-template-columns: 1fr;
 	margin: 0 auto;
-
 	align-items: center;
 	justify-items: center;
 }
