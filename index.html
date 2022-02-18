@@ -11,12 +11,12 @@
 
     <link rel="icon" href="/images/tree.ico">
     <link rel="stylesheet" href="css/spectre.min.css">
-    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
 </head>
 
 <body>
-    <section class="sectionblock">
+    <section class="section">
         <div class="container box">
             <div class="columns is-vcentered">
                 <div class="column is-3">
@@ -35,70 +35,25 @@
                         użyciu zestawów klocków Lego.
                         Wykonuję również strony internetowe na zlecenie.
                     </p>
+                    <button class="button is-primary"
+                    hx-get="/portofolio.html"
+                    hx-target="#swap"
+                    hx-swap="innerHTML"
+                    >Portofolio</button>
+                    <button class="button is-primary"
+                    hx-get="/projects.html"
+                    hx-target="#swap"
+                    hx-swap="innerHTML">Projects</button>
                 </div>
             </div>
-            <div class="columns is-centered">
-                <div class="column content">
-                    <h2>👦 O mnie</h2>
-                    <ul>
-                        <li>Inżynier PW</li>
-                        <li>Instruktor robotyki</li>
-                        <li>Trener programowania dla dzieci</li>
-                        <li>Pasjonat programowania</li>
-                        <li>Działacz społeczny</li>
-                        <li>Miłośnik kawy</li>
-                        <li>Stolarz (gdy potrzeba 😄)</li>
-                    </ul>
-                    
-                    <!-- CV do ściągnięcia -->
-                </div>
-                <div class="column content">
-                    <h2>⚡ Technologie </h2>
-                    <ul>
-                        <li>HTML/CSS (Bulma)</li>
-                        <li>Python/Django</li>
-                        <li>HTMX</li>
-                        <li>PostgreSQL</li>
-                        <li>Wordpress</li>
-                        <li>Blockchain</li>
-                    </ul>
-                </div>
-                <div class="column">
-                    <div class="card">
-                        <div class="card-image">
-                            <figure class="image is-4by3">
-                                <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
-                            </figure>
-                        </div>
-                        <div class="card-content">
-                            <div class="media">
-                                <div class="media-left">
-                                    <figure class="image is-48x48">
-                                        <img src="https://bulma.io/images/placeholders/96x96.png"
-                                            alt="Placeholder image">
-                                    </figure>
-                                </div>
-                                <div class="media-content">
-                                    <p class="title is-4">John Smith</p>
-                                    <p class="subtitle is-6">@johnsmith</p>
-                                </div>
-                            </div>
+            <div id="swap">
 
-                            <div class="content">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                                <a href="#">#css</a> <a href="#">#responsive</a>
-                                <br>
-                                <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
+
         </div>
     </section>
 
-
+<script src="https://unpkg.com/htmx.org@1.6.1"></script>
 </body>
 
 </html>
