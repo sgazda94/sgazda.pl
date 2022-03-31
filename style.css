@@ -1,16 +1,33 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Red+Hat+Mono:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600&display=swap");
 
 body {
 	background: transparent;
-	background-image: url(images/desk.webp);
+	background-image: url(images/blob-bg.svg);
 	background-size: cover;
-	font-family: "Red Hat Mono", monospace;
+	background-attachment: fixed;
+	font-family: "Work Sans", "Red Hat Mono", monospace;
+	font-size: 14px;
+	color: rgb(230, 230, 230);
 	letter-spacing: 1px;
 	overflow-wrap: break-word;
 }
+/*
+blob-bg
+0b0b0b -dark grey
+1e3019 - green */
+
+mark {
+	display: inline-block;
+	line-height: 0em;
+	padding-bottom: 0.4em;
+	background-color: #1e3019;
+	color: white;
+	border-bottom: none;
+}
 
 .main {
-	width: 1250px;
+	width: 1300px;
 	max-width: 100%;
 	display: grid;
 	grid-template-columns: 1fr;
@@ -20,10 +37,10 @@ body {
 }
 
 .container {
-	margin: 0 auto;
+	margin: auto;
 	background: rgba(18, 18, 18, 0.95);
-	color: white;
-	padding: 20px 30px;
+	color: rgb(240, 240, 240);
+	padding: 50px 60px;
 	word-wrap: break-word;
 	max-width: 100%;
 }
@@ -42,8 +59,13 @@ body {
 
 .profilowe {
 	width: 200px;
-	border-radius: 50%;
+	border-radius: 3%;
 	padding: 0;
+}
+
+#o-mnie {
+	justify-content: center;
+	align-items: center;
 }
 
 @media screen and (min-width: 600px) {
@@ -68,9 +90,41 @@ body {
 	}
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 600px) {
 	.name {
 		text-align: center;
 		padding-bottom: 30px;
 	}
+	#br {
+		display: none;
+}
+}
+
+.card {
+	background-color: #1e3019;
+	border: #434343;
+	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+	height: 100%;
+}
+
+
+.btn.btn-primary{
+	background: #005A87;
+	border-color: #005A87;
+}
+
+.btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary:focus{
+	background: hsl(200, 100%, 12%);
+	border-color: hsl(200, 100%, 12%);
+}
+
+.card-body {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	justify-content: flex-end;
+}
+
+.icon {
+	align
 }
