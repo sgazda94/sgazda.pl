@@ -81,7 +81,7 @@ mark {
 		margin: 0 auto;
 		background: rgba(24, 24, 24, 0.9);
 		color: white;
-		border: 1px solid grey;
+		border: 1px solid rgba(92, 92, 92, 0.6);
 		border-radius: 20px;
 		padding: 30px 50px;
 	}
